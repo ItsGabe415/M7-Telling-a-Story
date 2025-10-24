@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://drays61pfu7xc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a4fo1"]
+bg_color = Color(1, 1, 1, 1)
+
+[resource]
+default_font_size = 48
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_a4fo1")
