@@ -1,9 +1,17 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://drays61pfu7xc"]
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://drays61pfu7xc"]
+
+[ext_resource type="StyleBox" uid="uid://b6w2lq182ka4i" path="res://lessons/button_black.tres" id="1_ei3wx"]
+[ext_resource type="StyleBox" uid="uid://d4mh6vtru72un" path="res://lessons/button_red.tres" id="2_ulena"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a4fo1"]
 bg_color = Color(1, 1, 1, 1)
 
 [resource]
 default_font_size = 48
+Button/styles/disabled = ExtResource("1_ei3wx")
+Button/styles/focus = ExtResource("1_ei3wx")
+Button/styles/hover = ExtResource("2_ulena")
+Button/styles/normal = ExtResource("1_ei3wx")
+Button/styles/pressed = ExtResource("2_ulena")
 RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
 RichTextLabel/styles/normal = SubResource("StyleBoxFlat_a4fo1")
