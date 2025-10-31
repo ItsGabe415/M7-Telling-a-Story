@@ -1,15 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://e5ycpsjrg0jl"]
+[gd_scene load_steps=9 format=3 uid="uid://buuvmd4loey7c"]
 
-[ext_resource type="Theme" uid="uid://drays61pfu7xc" path="res://lessons/main_theme.tres" id="1_kbped"]
-[ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="1_qtu10"]
-[ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="2_ee4bf"]
-[ext_resource type="Script" uid="uid://cvyjtb2pbe8s4" path="res://dialogue.gd" id="2_fj5cn"]
-[ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="3_kbped"]
-[ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="5_fj5cn"]
+[ext_resource type="Theme" uid="uid://drays61pfu7xc" path="res://lessons/main_theme.tres" id="1_2ose3"]
+[ext_resource type="Script" uid="uid://cvyjtb2pbe8s4" path="res://dialogue.gd" id="2_yxgko"]
+[ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="3_3lcr7"]
+[ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="4_ofruo"]
+[ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="5_mgwxf"]
+[ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="6_d0dyi"]
+[ext_resource type="AudioStream" uid="uid://bafjgt7eu3x5a" path="res://assets/talking_synth.ogg" id="7_efu3l"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fj5cn"]
-shader = ExtResource("1_qtu10")
-shader_parameter/pattern_sampler = ExtResource("2_ee4bf")
+shader = ExtResource("3_3lcr7")
+shader_parameter/pattern_sampler = ExtResource("4_ofruo")
 shader_parameter/bg_color = Color(1, 0.9490196, 0.75686276, 1)
 shader_parameter/pattern_color = Color(0.99607843, 0.8784314, 0.5647059, 1)
 shader_parameter/pattern_size = 256.0
@@ -25,8 +26,8 @@ offset_right = -31.0
 offset_bottom = -36.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_kbped")
-script = ExtResource("2_fj5cn")
+theme = ExtResource("1_2ose3")
+script = ExtResource("2_yxgko")
 
 [node name="Background" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_fj5cn")
@@ -47,7 +48,7 @@ offset_left = -8.0
 offset_top = 402.92
 offset_right = -231.0
 offset_bottom = 16.199951
-texture = ExtResource("3_kbped")
+texture = ExtResource("5_mgwxf")
 expand_mode = 1
 stretch_mode = 5
 
@@ -62,7 +63,7 @@ offset_right = -92.0
 offset_bottom = -27.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_fj5cn")
+texture = ExtResource("6_d0dyi")
 expand_mode = 1
 stretch_mode = 5
 
@@ -96,3 +97,7 @@ offset_bottom = -25.0
 grow_horizontal = 0
 grow_vertical = 0
 text = "Next"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("7_efu3l")
