@@ -1,7 +1,9 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1761949471
-control.tscn::PackedScene::344148302676760961::1761949471::0::1::::<><><>0<>0<><>::uid://drays61pfu7xc::::res://lessons/main_theme.tres<>uid://cs15e2hgd2lan::::res://assets/sliding_background.gdshader<>uid://bnly1gkbxw6b5::::res://assets/bubble_pattern.png<>uid://cvyjtb2pbe8s4::::res://dialogue.gd<>uid://copkt78vgp37i::::res://assets/sophia.png<>uid://d000xjtr4iqtk::::res://assets/emotion_regular.png<>uid://bafjgt7eu3x5a::::res://assets/talking_synth.ogg
+::res://::1762211724
 dialogue.gd::GDScript::6296932627817541077::1761949228::0::1::::<>Control<><>0<>0<><>::
+Dialogue.tscn::PackedScene::344148302676760961::1761950973::0::1::::<><><>0<>0<><>::uid://drays61pfu7xc::::res://lessons/main_theme.tres<>uid://cs15e2hgd2lan::::res://assets/sliding_background.gdshader<>uid://bnly1gkbxw6b5::::res://assets/bubble_pattern.png<>uid://cvyjtb2pbe8s4::::res://dialogue.gd<>uid://copkt78vgp37i::::res://assets/sophia.png<>uid://d000xjtr4iqtk::::res://assets/emotion_regular.png<>uid://bafjgt7eu3x5a::::res://assets/talking_synth.ogg
+expressions.gd::GDScript::911783541334918554::1761950968::0::1::::<>Control<><>0<>0<><>::
+expressions.tscn::PackedScene::3832781800797961666::1761950968::0::1::::<><><>0<>0<><>::uid://drays61pfu7xc::::res://lessons/main_theme.tres<>uid://m8w7avcmx5fa::::res://expressions.gd<>uid://cs15e2hgd2lan::::res://assets/sliding_background.gdshader<>uid://bnly1gkbxw6b5::::res://assets/bubble_pattern.png<>uid://copkt78vgp37i::::res://assets/sophia.png<>uid://d000xjtr4iqtk::::res://assets/emotion_regular.png
 icon_telling_a_story.png::CompressedTexture2D::6303229813746255456::1760899870::1761163593::1::::<><><>0<>0<>e643ef57334e7b0b7d625ea9018c612e<>res://.godot/imported/icon_telling_a_story.png-575f1234b8f51c85751bd402286d7779.ctex::
 ::res://addons/::1760899870
 ::res://addons/gdpractice/::1760899870
@@ -162,10 +164,10 @@ talking_synth_alternate.ogg::AudioStreamOggVorbis::3285191881384235626::17608998
 test.svg::CompressedTexture2D::996294012766278173::1760899870::1761163593::1::::<><><>0<>0<>ba4341a6c83fa4e0504ef2d150f3a830<>res://.godot/imported/test.svg-689185d65599d06cb921948f33195eb0.ctex::
 ::res://assets/extras/::1761163593
 emotion_angry.png::CompressedTexture2D::4318358562975653356::1760899870::1761163593::1::::<><><>0<>0<>adbc721005eba82a7e28488a90570101<>res://.godot/imported/emotion_angry.png-fd0c3451c84588ea85c8053c4187c2db.ctex::
-::res://lessons/::1761948955
+::res://lessons/::1761950968
 button_black.tres::StyleBoxFlat::4609351031673429634::1761604808::0::1::::<><><>0<>0<><>::
 button_red.tres::StyleBoxFlat::9219992561333432129::1761605078::0::1::::<><><>0<>0<><>::
-main_theme.tres::Theme::8353963414120343136::1761948955::0::1::::<><><>0<>0<><>::uid://b6w2lq182ka4i::::res://lessons/button_black.tres<>uid://d4mh6vtru72un::::res://lessons/button_red.tres
+main_theme.tres::Theme::8353963414120343136::1761950968::0::1::::<><><>0<>0<><>::uid://b6w2lq182ka4i::::res://lessons/button_black.tres<>uid://d4mh6vtru72un::::res://lessons/button_red.tres
 ::res://practices/::1760899870
 ::res://practices/L5.P1.pick_correct_response/::1761163593
 pick_correct_response.gd::GDScript::4093551056369971252::1760899870::0::1::::<>ColorRect<><>0<>0<><>::
