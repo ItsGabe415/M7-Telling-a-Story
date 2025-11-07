@@ -22,12 +22,12 @@ var dialogue_items: Array[Dictionary]= [
 },
 {
 	"expression": expressions["sad"],
-	"text":"and 3 bhoclate bick bookies?",
+	"text":"[shake]and 3 bhoclate bick bookies?[/shake]",
 	"character": bodies["sophia"],
 },
 {
 	"expression": expressions["happy"],
-	"text":"thats what i want thats it",
+	"text":"[rainbow val=0.8]thats what i want thats it![/rainbow]",
 	"character": bodies["pink"],
 },
 ]

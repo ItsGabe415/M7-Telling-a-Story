@@ -87,6 +87,7 @@ offset_left = 65.0
 offset_top = 505.16
 offset_right = -65.40015
 offset_bottom = -491.24
+bbcode_enabled = true
 text = "Hello World!"
 fit_content = true
 
