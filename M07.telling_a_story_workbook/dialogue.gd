@@ -66,5 +66,5 @@ func slide_in() -> void:
 	body.position.x = 200.0
 	tween.tween_property(body,"position:x", 0.0 , 0.3)
 	body.modulate.a = 0.0
-	tween.parallel().tween.property(body, "modulate:a", 1.0, 0.2)
+	tween.parallel().tween_property(body, "modulate:a", 1.0, 0.2)
 	
