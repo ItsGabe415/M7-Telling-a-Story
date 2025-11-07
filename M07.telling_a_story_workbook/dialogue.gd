@@ -1,16 +1,35 @@
 extends Control
+var expressions := {
+	"happy": preload ("res://assets/emotion_happy.png"),
+	"regular": preload ("res://assets/emotion_regular.png"),
+	"sad": preload ("res://assets/emotion_sad.png"),
+}
 
-var dialogue_items: Array[String]= [
-	"6 piece bicken nugget",
-	"Large boke",
-	"and 3 bhoclate bick bookies?",
-	"thats what i want thats it",
+var dialogue_items: Array[Dictionary]= [
+{
+	"expression": expressions["regular"],
+	"text":"6 piece bicken nugget",
+},
+{
+	"expression": expressions["happy"],
+	"text":"Large boke",
+},
+{
+	"expression": expressions["happy"],
+	"text":"and 3 bhoclate bick bookies?",
+},
+{
+	"expression": expressions["regular"],
+	"text":"thats what i want thats it",
+},
 ]
 var current_item_index := 0
 
 @onready var rich_text_label: RichTextLabel =%RichTextLabel
 @onready var next_button: Button = %NextButton
 @onready var audio_stream_player: AudioStreamPlayer = %AudioStreamPlayer
+@onready var body: TextureRect = %Body
+@onready var expression: TextureRect = %Expression
 
 func _ready() -> void:
 	show_text()
@@ -19,7 +38,8 @@ func _ready() -> void:
 
 func show_text() -> void:
 	var current_item := dialogue_items[current_item_index]
-	rich_text_label.text = current_item
+	rich_text_label.text = current_item["text"]
+	expression.texture =current_item["expression"]
 	rich_text_label.visible_ratio = 0.0
 	var tween := create_tween()
 	var text_appearing_duration := 1.2
